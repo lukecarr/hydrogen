@@ -42,7 +42,7 @@
 
 ## Installation
 
-Simply install Hydrogen globally with NPM's CLI and you're ready to go. Yep; it really is that easy!
+Simply install Hydrogen globally with NPM's CLI and you're ready to go. Yep, it really is that easy!
 
 ```bash
 $ npm i -g @hydrogen-lms/core
