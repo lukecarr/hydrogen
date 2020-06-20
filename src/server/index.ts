@@ -1,6 +1,7 @@
-import fastify from "fastify";
+import fastify, { FastifyInstance } from "fastify";
+import { Server, IncomingMessage, ServerResponse } from "http";
 
-const server = fastify({
+const server: FastifyInstance<Server, IncomingMessage, ServerResponse> = fastify({
   logger: true
 });
 
