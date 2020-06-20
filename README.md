@@ -1,36 +1,14 @@
 # Hydrogen
-### A super lightweight, frontend-less LMS (Learning Management System).
 
-<p>
-  <a href="https://github.com/lukecarr/hydrogen/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/lukecarr/hydrogen?color=4a00e0&style=for-the-badge" alt="License" />
-  </a>
-  <a href="https://github.com/lukecarr/hydrogen/releases">
-    <img src="https://img.shields.io/github/package-json/v/lukecarr/hydrogen/master?label=Stable&style=for-the-badge" alt="Version" />
-  </a>
-  <img src="https://img.shields.io/github/languages/code-size/lukecarr/hydrogen?style=for-the-badge" alt="Code Size" />
-  <br>
-  <a href="https://github.com/lukecarr/hydrogen/issues">
-    <img src="https://img.shields.io/github/issues/lukecarr/hydrogen?style=for-the-badge" alt="Issues Open" />
-  </a>
-  <a href="https://github.com/lukecarr/hydrogen/blob/master/OSSMETADATA">
-    <img src="https://img.shields.io/osslifecycle/lukecarr/hydrogen?style=for-the-badge" alt="OSS Lifecycle" />
-  </a>
-  <br><br>
-  <a href="https://ko-fi.com/lukecarr">
-    <img src="https://www.ko-fi.com/img/githubbutton_sm.svg" alt="Buy me a coffee!" />
-  </a>
-</p>
+A super lightweight, frontend-less LMS (Learning Management System).
 
-<h3>
-  <strong>
-    <a href="#key-features">Key Features</a> •
-    <a href="#installation">Installation</a> •
-    <a href="#usage">Usage</a> •
-    <a href="#contributing">Contributing</a> •
-    <a href="#credits">Credits</a>
-  </strong>
-</h3>
+[![License](https://img.shields.io/github/license/lukecarr/hydrogen?color=4a00e0)](https://github.com/lukecarr/hydrogen/blob/master/LICENSE)
+[![Stable Version](https://img.shields.io/github/package-json/v/lukecarr/hydrogen/master?label=Stable)](https://github.com/lukecarr/hydrogen/releases)
+![Code Size](https://img.shields.io/github/languages/code-size/lukecarr/hydrogen)
+[![Issues Open](https://img.shields.io/github/issues/lukecarr/hydrogen)](https://github.com/lukecarr/hydrogen/issues)
+[![OSS Lifecycle](https://img.shields.io/osslifecycle/lukecarr/hydrogen)](https://github.com/lukecarr/hydrogen/blob/master/OSSMETADATA)
+
+[![Buy me a coffee!](https://img.shields.io/badge/buy%20me%20a-coffee-%23FF5E5B)](https://ko-fi.com/lukecarr)
 
 ## Key Features
 
