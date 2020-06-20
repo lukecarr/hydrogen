@@ -1,7 +1,7 @@
 # Hydrogen
 
 [![License](https://img.shields.io/github/license/lukecarr/hydrogen?color=4a00e0&style=flat-square)](https://github.com/lukecarr/hydrogen/blob/master/LICENSE)
-[![Stable Version](https://img.shields.io/github/package-json/v/lukecarr/hydrogen/master?label=Stable&style=flat-square)](https://github.com/lukecarr/hydrogen/releases)
+[![Version](https://img.shields.io/github/package-json/v/lukecarr/hydrogen/master?label=version&style=flat-square)](https://github.com/lukecarr/hydrogen/releases)
 ![Code Size](https://img.shields.io/github/languages/code-size/lukecarr/hydrogen?style=flat-square)
 [![Issues Open](https://img.shields.io/github/issues/lukecarr/hydrogen?style=flat-square)](https://github.com/lukecarr/hydrogen/issues)
 [![OSS Lifecycle](https://img.shields.io/osslifecycle/lukecarr/hydrogen?style=flat-square)](https://github.com/lukecarr/hydrogen/blob/master/OSSMETADATA)
