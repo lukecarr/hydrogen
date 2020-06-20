@@ -7,7 +7,6 @@ A super lightweight, frontend-less LMS (Learning Management System).
 ![Code Size](https://img.shields.io/github/languages/code-size/lukecarr/hydrogen)
 [![Issues Open](https://img.shields.io/github/issues/lukecarr/hydrogen)](https://github.com/lukecarr/hydrogen/issues)
 [![OSS Lifecycle](https://img.shields.io/osslifecycle/lukecarr/hydrogen)](https://github.com/lukecarr/hydrogen/blob/master/OSSMETADATA)
-
 [![Buy me a coffee!](https://img.shields.io/badge/buy%20me%20a-coffee-%23FF5E5B)](https://ko-fi.com/lukecarr)
 
 ## Key Features
