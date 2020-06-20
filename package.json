@@ -32,9 +32,7 @@
     "dev:server": "ts-node --require dotenv/config src/server/index.ts",
     "dev:cli": "ts-node --require dotenv/config src/cli/index.ts",
     "lint": "eslint \"src/**\"",
-    "build:types": "tsc --emitDeclarationOnly",
-    "build:js": "babel src --out-dir dist --extensions \".ts,.tsx\" --source-maps inline",
-    "build": "yarn build:types && yarn build:js"
+    "build": "babel src --out-dir dist --extensions \".ts,.tsx\""
   },
   "devDependencies": {
     "@babel/cli": "^7.10.3",
