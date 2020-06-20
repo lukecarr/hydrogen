@@ -2,7 +2,7 @@
   Hydrogen
 </h1>
 
-<h4 align="center">A super lighteweight, frontend-less LMS (Learning Management System).</h4>
+<h4 align="center">A super lighteweight, frontend-less LMS (Learning Management System).<br></h4>
 
 <p align="center">
   <a href="https://github.com/lukecarr/hydrogen/blob/master/LICENSE">
@@ -12,7 +12,7 @@
     <img src="https://img.shields.io/github/package-json/v/lukecarr/hydrogen/master?label=Stable&style=for-the-badge" alt="Version" />
   </a>
   <img src="https://img.shields.io/github/languages/code-size/lukecarr/hydrogen?style=for-the-badge" alt="Code Size" />
-  <br><br>
+  <br>
   <a href="https://github.com/lukecarr/hydrogen/issues">
     <img src="https://img.shields.io/github/issues/lukecarr/hydrogen?style=for-the-badge" alt="Issues Open" />
   </a>
@@ -25,15 +25,15 @@
   </a>
 </p>
 
-<p align="center">
+<h3 align="center">
   <strong>
     <a href="#key-features">Key Features</a> •
-    <a href="https://hydrogen.lukecarr.dev">Documentation</a> •
+    <a href="#installation">Installation</a> •
     <a href="#usage">Usage</a> •
     <a href="#contributing">Contributing</a> •
     <a href="#credits">Credits</a>
   </strong>
-</p>
+</h3>
 
 ## Key Features
 
