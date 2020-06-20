@@ -3466,6 +3466,11 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
 
+newline@0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/newline/-/newline-0.0.3.tgz#0f6a74493223dba04fe7dbfb6cdc804bf7e46dd0"
+  integrity sha1-D2p0STIj26BP59v7bNyAS/fkbdA=
+
 next-tick@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
@@ -3956,6 +3961,14 @@ posix-character-classes@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/posix-character-classes/-/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
   integrity sha1-AerA/jta9xoqbAL+q7jB/vfgDqs=
+
+postgrator@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/postgrator/-/postgrator-4.0.1.tgz#a06d7be12fe1aaab0f98c75bc2617417e3d18883"
+  integrity sha512-BFLIfGTOVSGFA1mThDETBnUQ59stxDtm9+l9Fr6H9bekgnuC6+a0BXH6b1fosjrOAORpmJ4UZaR6xCAY9Pn15Q==
+  dependencies:
+    glob "^7.1.6"
+    newline "0.0.3"
 
 postgres-array@~2.0.0:
   version "2.0.0"
