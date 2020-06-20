@@ -1,7 +1,7 @@
 {
   "name": "@hydrogen-lms/core",
   "version": "0.1.0",
-  "description": "A super lighteweight, frontend-less LMS (Learning Management System).",
+  "description": "A super lightweight, frontend-less LMS (Learning Management System).",
   "keywords": [
     "lms",
     "hydrogen-lms"

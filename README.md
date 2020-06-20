@@ -2,7 +2,7 @@
   Hydrogen
 </h1>
 
-<h4 align="center">A super lighteweight, frontend-less LMS (Learning Management System).<br></h4>
+<h4 align="center">A super lightweight, frontend-less LMS (Learning Management System).<br></h4>
 
 <p align="center">
   <a href="https://github.com/lukecarr/hydrogen/blob/master/LICENSE">
