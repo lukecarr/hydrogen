@@ -8,13 +8,17 @@
   <a href="LICENSE">
     <img src="https://img.shields.io/github/license/lukecarr/hydrogen?color=4a00e0&style=for-the-badge" alt="License" />
   </a>
-  <img src="https://img.shields.io/github/package-json/v/lukecarr/hydrogen/master?label=Stable&style=for-the-badge" alt="Version" />
+  <a href="https://github.com/lukecarr/hydrogen/releases">
+    <img src="https://img.shields.io/github/package-json/v/lukecarr/hydrogen/master?label=Stable&style=for-the-badge" alt="Version" />
+  </a>
   <img src="https://img.shields.io/github/languages/code-size/lukecarr/hydrogen?style=for-the-badge" alt="Code Size" />
   <br><br>
   <a href="https://github.com/lukecarr/hydrogen/issues">
     <img src="https://img.shields.io/github/issues/lukecarr/hydrogen?style=for-the-badge" alt="Issues Open" />
   </a>
-  <img src="https://img.shields.io/osslifecycle/lukecarr/hydrogen?style=for-the-badge" alt="OSS Lifecycle" />
+  <a href="https://github.com/lukecarr/hydrogen/blob/master/OSSMETADATA">
+    <img src="https://img.shields.io/osslifecycle/lukecarr/hydrogen?style=for-the-badge" alt="OSS Lifecycle" />
+  </a>
   <br><br>
   <a href="https://ko-fi.com/lukecarr">
     <img src="https://www.ko-fi.com/img/githubbutton_sm.svg" alt="Buy me a coffee!" />
