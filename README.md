@@ -5,7 +5,7 @@
 <h4 align="center">A super lighteweight, frontend-less LMS (Learning Management System).</h4>
 
 <p align="center">
-  <a href="LICENSE">
+  <a href="https://github.com/lukecarr/hydrogen/blob/master/LICENSE">
     <img src="https://img.shields.io/github/license/lukecarr/hydrogen?color=4a00e0&style=for-the-badge" alt="License" />
   </a>
   <a href="https://github.com/lukecarr/hydrogen/releases">
