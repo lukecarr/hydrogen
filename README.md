@@ -1,11 +1,11 @@
 # Hydrogen
 
-[![License](https://img.shields.io/github/license/lukecarr/hydrogen?color=4a00e0)](https://github.com/lukecarr/hydrogen/blob/master/LICENSE)
-[![Stable Version](https://img.shields.io/github/package-json/v/lukecarr/hydrogen/master?label=Stable)](https://github.com/lukecarr/hydrogen/releases)
-![Code Size](https://img.shields.io/github/languages/code-size/lukecarr/hydrogen)
-[![Issues Open](https://img.shields.io/github/issues/lukecarr/hydrogen)](https://github.com/lukecarr/hydrogen/issues)
-[![OSS Lifecycle](https://img.shields.io/osslifecycle/lukecarr/hydrogen)](https://github.com/lukecarr/hydrogen/blob/master/OSSMETADATA)
-[![Buy me a coffee!](https://img.shields.io/badge/buy%20me%20a-coffee-%23FF5E5B)](https://ko-fi.com/lukecarr)
+[![License](https://img.shields.io/github/license/lukecarr/hydrogen?color=4a00e0&style=flat-square)](https://github.com/lukecarr/hydrogen/blob/master/LICENSE)
+[![Stable Version](https://img.shields.io/github/package-json/v/lukecarr/hydrogen/master?label=Stable&style=flat-square)](https://github.com/lukecarr/hydrogen/releases)
+![Code Size](https://img.shields.io/github/languages/code-size/lukecarr/hydrogen?style=flat-square)
+[![Issues Open](https://img.shields.io/github/issues/lukecarr/hydrogen?style=flat-square)](https://github.com/lukecarr/hydrogen/issues)
+[![OSS Lifecycle](https://img.shields.io/osslifecycle/lukecarr/hydrogen?style=flat-square)](https://github.com/lukecarr/hydrogen/blob/master/OSSMETADATA)
+[![Buy me a coffee!](https://img.shields.io/badge/buy%20me%20a-coffee-%23FF5E5B?style=flat-square&logo=ko-fi)](https://ko-fi.com/lukecarr)
 
 A super lightweight, frontend-less LMS (Learning Management System).
 
