@@ -1,0 +1,28 @@
+{
+  "name": "@hydrogen-lms/core",
+  "version": "0.1.0",
+  "description": "A super lighteweight, frontend-less LMS (Learning Management System).",
+  "keywords": [
+    "lms",
+    "hydrogen-lms"
+  ],
+  "homepage": "https://hydrogen.lukecarr.dev",
+  "bugs": {
+    "url": "https://github.com/lukecarr/hydrogen/issues"
+  },
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "Luke Carr",
+      "email": "me@lukecarr.dev"
+    }
+  ],
+  "main": "dist/index.js",
+  "files": [
+    "dist/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukecarr/hydrogen.git"
+  }
+}
