@@ -50,10 +50,14 @@ $ npm i -g @hydrogen-lms/core
 
 ## Usage
 
-Once you've installed Hydrogen, you'll be able to interact with it via the provided CLI anywhere on your system.
+Once you've installed Hydrogen, you'll be able to interact with it using the two provided CLIs, `hydrogen` (for launching the server) and `helium` (for performing administrative actions such as database migrations).
 
 ```bash
-$ hydrogen --help
+# Launches the Helium shell
+$ helium
+
+# Launch the Hydrogen server
+$ hydrogen
 ```
 
 ## Contributing
