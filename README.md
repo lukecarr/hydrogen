@@ -49,6 +49,7 @@ We have a code of conduct outlined in the **[CODE_OF_CONDUCT.md](CODE_OF_CONDUCT
 Hydrogen is built with the following open source packages:
 
 - **[Fastify](https://fastify.io)**
+- **[Postgrator](https://github.com/rickbergfalk/postgrator)**
 - **[Slonik](https://github.com/gajus/slonik)**
 - **[TypeScript](https://www.typescriptlang.org)**
 - **[Vorpal](https://vorpal.js.org)**
