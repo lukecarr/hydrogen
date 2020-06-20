@@ -1,10 +1,7 @@
-<h1 align="center">
-  Hydrogen
-</h1>
+# Hydrogen
+### A super lightweight, frontend-less LMS (Learning Management System).
 
-<h4 align="center">A super lightweight, frontend-less LMS (Learning Management System).<br></h4>
-
-<p align="center">
+<p>
   <a href="https://github.com/lukecarr/hydrogen/blob/master/LICENSE">
     <img src="https://img.shields.io/github/license/lukecarr/hydrogen?color=4a00e0&style=for-the-badge" alt="License" />
   </a>
@@ -25,7 +22,7 @@
   </a>
 </p>
 
-<h3 align="center">
+<h3>
   <strong>
     <a href="#key-features">Key Features</a> •
     <a href="#installation">Installation</a> •
@@ -72,9 +69,18 @@ We have a code of conduct outlined in the **[CODE_OF_CONDUCT.md](CODE_OF_CONDUCT
 
 ## Credits
 
-This project uses the following open source packages:
+Hydrogen is built with the following open source packages:
 
-- **[Node.js](https://nodejs.org)**
+- **[Fastify](https://fastify.io)**
+- **[Slonik](https://github.com/gajus/slonik)**
 - **[TypeScript](https://www.typescriptlang.org)**
+- **[Vorpal](https://vorpal.js.org)**
+
+Hydrogen also uses the following open sources packages as build tools:
+
+- **[Babel](https://babeljs.io)**
+- **[ESLint](https://eslint.org)**
+- **[Gulp](https://gulpjs.com)**
+- **[Terser](https://terser.org)**
 
 For a comprehensive list, see the **[package.json](package.json)** file's dependencies section.
