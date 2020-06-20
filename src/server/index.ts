@@ -1,14 +1,16 @@
 import fastify, { FastifyInstance } from "fastify";
 import { Server, IncomingMessage, ServerResponse } from "http";
+import config from "./config";
 import sql from "./sql";
 
 const server: FastifyInstance<Server, IncomingMessage, ServerResponse> = fastify({
   logger: true
 });
 
-server.register(sql, {
-  uri: process.env.DSN || ""
+server.register(config, {
+  filename: process.env["HYDROGEN_CONFIG"] || undefined
 });
+server.register(sql);
 
 server.get("/", async () => {
   return "Hello World!";

@@ -21,8 +21,8 @@ declare module "fastify" {
  * @since 0.1.0
  * @author Luke Carr
  */
-export default plugin(async (fastify, options) => {
-  fastify.decorate("sql", createPool(options.uri));
+export default plugin(async (fastify) => {
+  fastify.decorate("sql", createPool(fastify.config.SQL_DSN));
   fastify.addHook("onClose", (instance, done) => {
     instance.sql.end().then(() => {
       done();
