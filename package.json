@@ -33,7 +33,9 @@
     "dev:server": "ts-node --require dotenv/config src/server/index.ts",
     "dev:cli": "ts-node --require dotenv/config src/cli/index.ts",
     "lint": "eslint \"src/**\"",
-    "build": "gulp build"
+    "build": "gulp build",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.3",
@@ -64,6 +66,8 @@
     "fastify-plugin": "^1.6.1",
     "postgrator": "^4.0.1",
     "slonik": "^22.4.11",
-    "vorpal": "^1.12.0"
-  }
+    "vorpal": "^1.12.0",
+    "snyk": "^1.346.0"
+  },
+  "snyk": true
 }
