@@ -1,7 +1,7 @@
 import plugin from "fastify-plugin";
 import fs from "fs";
 import { flatten } from "./util";
-import sql from "./sql";
+import defaults from "./defaults";
 
 declare module "fastify" {
   interface FastifyInstance {
@@ -10,12 +10,6 @@ declare module "fastify" {
     };
   }
 }
-
-const defaults: {
-  [property: string]: ({ default: unknown; transform?(value: unknown): unknown })
-} = {
-  ...sql
-};
 
 /**
  * Loads a JSON configuration from a file into the Fastify namespace under the `config`
