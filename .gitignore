@@ -22,3 +22,4 @@ node_modules/
 .yarn/unplugged
 .yarn/build-state.yml
 dist
+bin
