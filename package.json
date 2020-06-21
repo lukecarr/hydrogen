@@ -18,8 +18,7 @@
     }
   ],
   "bin": {
-    "helium": "./dist/cli/index.js",
-    "hydrogen": "./dist/server/index.js"
+    "helium": "./dist/cli/index.js"
   },
   "files": [
     "dist/",
@@ -60,10 +59,10 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.10.3",
+    "@caporal/core": "^2.0.2",
     "fastify": "^2.15.0",
     "fastify-plugin": "^1.6.1",
     "postgrator": "^4.0.1",
-    "slonik": "^22.4.11",
-    "vorpal": "^1.12.0"
+    "slonik": "^22.4.11"
   }
 }

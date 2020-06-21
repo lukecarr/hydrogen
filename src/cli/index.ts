@@ -1,8 +1,4 @@
-import Vorpal from "vorpal";
-import migrate from "./commands/migrate";
+import { program } from "@caporal/core";
+import "./commands";
 
-const cli = new Vorpal();
-
-migrate(cli);
-
-cli.delimiter("hydrogen$").show();
+program.version(String(process.env.npm_package_version)).run();
