@@ -11,12 +11,14 @@ A super lightweight, frontend-less LMS (Learning Management System).
 
 ## Key Features
 
-- **Frontend-less LMS.** We provide the nitty-gritty API backend, you provide the user interface!
+- **Frontend-less LMS.** We provide the nitty-gritty API backend, you provide the user
+  interface!
 - **Ridiculously performant.** Designed from the ground up to be fast and lightweight.
 
 ## Installation
 
-Simply install Hydrogen globally with NPM's CLI and you're ready to go. Yep, it really is that easy!
+Simply install Hydrogen globally with NPM's CLI and you're ready to go. Yep, it really is
+that easy!
 
 ```bash
 $ npm i -g @hydrogen-lms/core
@@ -24,7 +26,9 @@ $ npm i -g @hydrogen-lms/core
 
 ## Usage
 
-Once you've installed Hydrogen, you'll be able to interact with it using the two provided CLIs, `hydrogen` (for launching the server) and `helium` (for performing administrative actions such as database migrations).
+Once you've installed Hydrogen, you'll be able to interact with it using the two provided
+CLIs, `hydrogen` (for launching the server) and `helium` (for performing administrative
+actions such as database migrations).
 
 ```bash
 # Launches the Helium shell
@@ -38,11 +42,13 @@ $ hydrogen
 
 ### General Guidelines
 
-By contributing to this project, you agree to all of the general guidelines outlined in the **[CONTRIBUTING.md](CONTRIBUTING.md)** file.
+By contributing to this project, you agree to all of the general guidelines outlined in
+the **[CONTRIBUTING.md](CONTRIBUTING.md)** file.
 
 ### Code of Conduct
 
-We have a code of conduct outlined in the **[CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)** file which you are expected to adhere to at all times.
+We have a code of conduct outlined in the **[CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)**
+file which you are expected to adhere to at all times.
 
 ## Credits
 
@@ -61,4 +67,5 @@ Hydrogen also uses the following open sources packages as build tools:
 - **[Gulp](https://gulpjs.com)**
 - **[Terser](https://terser.org)**
 
-For a comprehensive list, see the **[package.json](package.json)** file's dependencies section.
+For a comprehensive list, see the **[package.json](package.json)** file's dependencies
+section.
