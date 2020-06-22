@@ -15,24 +15,10 @@ A super lightweight, frontend-less LMS (Learning Management System).
   interface!
 - **Ridiculously performant.** Designed from the ground up to be fast and lightweight.
 
-## Installation
+## Documentation
 
-Simply install Hydrogen globally with NPM's CLI and you're ready to go. Yep, it really is
-that easy!
-
-```bash
-$ npm i -g @hydrogen-lms/core
-```
-
-## Usage
-
-Once you've installed Hydrogen, you'll be able to interact with it using the provided
-`helium` CLI.
-
-```bash
-# Launches the Hydrogen server
-$ helium serve
-```
+Head over to the **[official docs](https://hydrogen.lukecarr.dev)** where you can find
+instructions for installing and running Hydrogen.
 
 ## Contributing
 
