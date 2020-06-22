@@ -26,16 +26,12 @@ $ npm i -g @hydrogen-lms/core
 
 ## Usage
 
-Once you've installed Hydrogen, you'll be able to interact with it using the two provided
-CLIs, `hydrogen` (for launching the server) and `helium` (for performing administrative
-actions such as database migrations).
+Once you've installed Hydrogen, you'll be able to interact with it using the provided
+`helium` CLI.
 
 ```bash
-# Launches the Helium shell
-$ helium
-
-# Launch the Hydrogen server
-$ hydrogen
+# Launches the Hydrogen server
+$ helium serve
 ```
 
 ## Contributing
@@ -54,11 +50,11 @@ file which you are expected to adhere to at all times.
 
 Hydrogen is built with the following open source packages:
 
+- **[Caporal](https://caporal.io)**
 - **[Fastify](https://fastify.io)**
 - **[Postgrator](https://github.com/rickbergfalk/postgrator)**
 - **[Slonik](https://github.com/gajus/slonik)**
 - **[TypeScript](https://www.typescriptlang.org)**
-- **[Vorpal](https://vorpal.js.org)**
 
 Hydrogen also uses the following open sources packages as build tools:
 
