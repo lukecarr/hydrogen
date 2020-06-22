@@ -1,2 +1,0 @@
-import "./migrate";
-import "./serve";
