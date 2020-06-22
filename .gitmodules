@@ -1,3 +1,6 @@
 [submodule "docs"]
 	path = docs
 	url = https://github.com/lukecarr/hydrogen-docs
+[submodule "cli"]
+	path = cli
+	url = https://github.com/lukecarr/hydrogen-cli
