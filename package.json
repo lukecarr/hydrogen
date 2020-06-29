@@ -48,7 +48,7 @@
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-terser-js": "^5.2.2",
-    "pkg": "^4.4.8",
+    "pkg": "^4.4.9",
     "typescript": "^3.9.5"
   },
   "dependencies": {
