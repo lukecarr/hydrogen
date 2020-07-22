@@ -32,7 +32,7 @@ declare module "fastify" {
  * 
  * @async
  */
-export default plugin(async (fastify, options) => {
+export default plugin(async (fastify, options: { filename?: string }) => {
   const config: Record<string, unknown> = {};
 
   for (let i = 0; i < Object.entries(defaults).length; i += 1) {
