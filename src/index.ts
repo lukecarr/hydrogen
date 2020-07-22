@@ -4,41 +4,62 @@ import config from "./config";
 import sql from "./sql";
 
 /**
- * Starts the Hydrogen server.
- * 
- * @param {string} configFile The path to the Hydrogen configuration file.
+ * The main server responsible for serving Hydrogen LMS's core functionality.
  * 
  * @since 0.1.0-rc.1
  * @author Luke Carr
  */
-export default (configFile: string): void => {
-  const server: FastifyInstance<Server, IncomingMessage, ServerResponse> = fastify({
-    logger: true
-  });
-  
-  server.register(config, {
-    filename: configFile
-  });
-  server.register(sql);
-  
-  server.get("/", async () => {
-    return "Hello World!";
-  });
-  
-  const start = async () => {
+export default class HydrogenServer {
+  private fastify: FastifyInstance<Server, IncomingMessage, ServerResponse>;
+
+  /**
+   * Instantiates a new instance of the Hydrogen LMS core server.
+   * 
+   * @param options Configurtion options to pass to Hydrogen.
+   * 
+   * @since 0.1.0-rc.1
+   */
+  public constructor(options: {
+    config: string,
+    logging?: boolean,
+  }) {
+    this.fastify = fastify({
+      logger: options.logging || false,
+    });
+    
+    this.fastify.register(config, {
+      filename: options.config,
+    });
+    this.fastify.register(sql);
+
+    this.registerRoutes();
+  }
+
+  /**
+   * Registers Hydrogen's HTTP routes with Fastify.
+   * 
+   * @since 0.1.0-rc.1
+   */
+  private registerRoutes() {
+    this.fastify.get("/", async () => "Hello World");
+  }
+
+  /**
+   * Starts the Hydrogen LMS core server on port 3000.
+   * 
+   * @since 0.1.0-rc.1
+   * @async
+   */
+  public async listen() {
+    process.on("SIGINT", () => {
+      this.fastify.close().then(() => process.exit());
+    });
+
     try {
-      await server.listen(3000);
+      await this.fastify.listen(3000);
     } catch (error) {
-      server.log.error(error);
+      this.fastify.log.error(error);
       process.exit(1);
     }
-  };
-  
-  process.on("SIGINT", () => {
-    server.close().then(() => {
-      process.exit();
-    });
-  });
-
-  start();
-};
+  }
+}
