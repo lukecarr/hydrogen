@@ -27,18 +27,27 @@ export default class HydrogenServer {
       logger: options.logging !== undefined ? (options.logging === "none" ? false : 
         { level: options.logging } ) : { level: "info" },
     });
-    this.fastify.log.info("Starting Hydrogen server...");
     
-    Promise.allSettled([
-      this.fastify.register(config, {
-        filename: options.config,
-      }),
-      this.fastify.register(sql)
-    ]);
+    this.fastify.log.debug("Initializing Hydrogen...");
+    this.init(options.config).then(() => 
+      this.fastify.log.debug("Initialized Hydrogen successfully."));
+  }
 
-    this.fastify.log.debug("Registering HTTP routes...");
-    this.registerRoutes();
-    this.fastify.log.debug("Registered HTTP routes successfully.");
+  /**
+   * Initializes the Hydrogen server instance.
+   * 
+   * @param filename The filename of Hydrogen's configuration file.
+   */
+  private async init(filename: string): Promise<void> {
+    return new Promise((resolve) => {
+      this.fastify.register(config, { filename, }).register(sql).then(() => {
+        this.fastify.log.debug("Registering HTTP routes...");
+        this.registerRoutes();
+        this.fastify.log.debug("Registered HTTP routes successfully.");
+
+        resolve();
+      });      
+    });
   }
 
   /**
@@ -46,7 +55,7 @@ export default class HydrogenServer {
    * 
    * @since 0.1.0-rc.1
    */
-  private registerRoutes() {
+  private registerRoutes(): void {
     this.fastify.get("/", async () => "Hello World");
   }
 
