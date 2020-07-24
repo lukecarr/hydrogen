@@ -21,10 +21,11 @@ export default class HydrogenServer {
    */
   public constructor(options: {
     config: string,
-    logging?: boolean,
+    logging?: string,
   }) {
     this.fastify = fastify({
-      logger: options.logging || false,
+      logger: options.logging !== undefined ? (options.logging === "none" ? false : 
+        { level: options.logging } ) : { level: "info" },
     });
     this.fastify.log.info("Starting Hydrogen server...");
     
