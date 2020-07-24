@@ -25,8 +25,15 @@ declare module "fastify" {
  * @author Luke Carr
  */
 export default plugin(async (fastify) => {
-  fastify.decorate("sql", createPool(fastify.config.SQL_DSN));
+  fastify.log.debug("Registering SQL plugin...");
   
+  const pool = createPool(fastify.config.SQL_DSN);
+  fastify.log.debug("Created PostgreSQL connection pool.");
+  
+  fastify.decorate("sql", pool);
+  fastify.log.debug("Decorated Fastify instance with connection pool instance.");
+  
+  fastify.log.debug("Establishing connection with PostgreSQL...");
   try {
     await fastify.sql.query(sql`SELECT 1`);
     fastify.log.info("Connection established with PostgreSQL successfully!");
@@ -40,4 +47,7 @@ export default plugin(async (fastify) => {
       done();
     });
   });
+  fastify.log.debug("Registered connection pool closure with Fastify onClose hook.");
+  
+  fastify.log.debug("Registered SQL plugin successfully.");
 });

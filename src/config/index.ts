@@ -33,6 +33,8 @@ declare module "fastify" {
  * @async
  */
 export default plugin(async (fastify, options: { filename?: string }) => {
+  fastify.log.debug("Registering config plugin...");
+
   const config: Record<string, unknown> = {};
 
   for (let i = 0; i < Object.entries(defaults).length; i += 1) {
@@ -48,9 +50,14 @@ export default plugin(async (fastify, options: { filename?: string }) => {
   }
 
   if (options.filename !== undefined) {
+    fastify.log.debug("Config filename provided! Loading from file...");
     Object.assign(config,
       flatten(JSON.parse(await fs.promises.readFile(options.filename, "utf-8"))));
+    fastify.log.debug("Loaded config from file using provided filename.");
   }
 
   fastify.decorate("config", config);
+  fastify.log.debug("Decorated Fastify instance with config object.");
+  
+  fastify.log.debug("Registered config plugin successfully.");
 });

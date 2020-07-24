@@ -26,15 +26,18 @@ export default class HydrogenServer {
     this.fastify = fastify({
       logger: options.logging || false,
     });
+    this.fastify.log.info("Starting Hydrogen server...");
     
-    Promise.all([
+    Promise.allSettled([
       this.fastify.register(config, {
         filename: options.config,
       }),
-      this.fastify.register(sql),
+      this.fastify.register(sql)
     ]);
 
+    this.fastify.log.debug("Registering HTTP routes...");
     this.registerRoutes();
+    this.fastify.log.debug("Registered HTTP routes successfully.");
   }
 
   /**
@@ -52,7 +55,7 @@ export default class HydrogenServer {
    * @since 0.1.0-rc.1
    * @async
    */
-  public async listen() {
+  public async listen(): Promise<void> {
     process.on("SIGINT", () => {
       this.fastify.close().then(() => process.exit());
     });
