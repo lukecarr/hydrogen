@@ -27,10 +27,12 @@ export default class HydrogenServer {
       logger: options.logging || false,
     });
     
-    this.fastify.register(config, {
-      filename: options.config,
-    });
-    this.fastify.register(sql);
+    Promise.all([
+      this.fastify.register(config, {
+        filename: options.config,
+      }),
+      this.fastify.register(sql),
+    ]);
 
     this.registerRoutes();
   }

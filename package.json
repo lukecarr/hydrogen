@@ -28,7 +28,9 @@
   },
   "scripts": {
     "lint": "eslint \"src/**\"",
-    "build": "gulp build"
+    "build": "gulp build",
+    "dev": "ts-node src/cli.dev.ts",
+    "prepublishOnly": "yarn lint && yarn build"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.3",
@@ -49,6 +51,7 @@
     "gulp-babel": "^8.0.0",
     "gulp-terser-js": "^5.2.2",
     "pkg": "^4.4.9",
+    "ts-node": "^8.10.2",
     "typescript": "^3.9.5"
   },
   "dependencies": {
