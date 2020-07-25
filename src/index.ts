@@ -2,6 +2,7 @@ import fastify, { FastifyInstance } from "fastify";
 import { Server, IncomingMessage, ServerResponse } from "http";
 import config from "./config";
 import sql from "./sql";
+import pino from "pino";
 
 /**
  * The main server responsible for serving Hydrogen LMS's core functionality.
@@ -24,8 +25,19 @@ export default class HydrogenServer {
     logging?: string,
   }) {
     this.fastify = fastify({
-      logger: options.logging !== undefined ? (options.logging === "none" ? false : 
-        { level: options.logging } ) : { level: "info" },
+      logger: pino({
+        name: "hydrogen",
+        level: options.logging,
+        formatters: {
+          level(label) {
+            return { level: label };
+          },
+        },
+        prettyPrint: {
+          ignore: "pid,hostname,name",
+          translateTime: true,
+        },
+      }),
     });
     
     this.fastify.log.debug("Initializing Hydrogen...");
