@@ -33,7 +33,7 @@
     "prepublishOnly": "yarn lint && yarn build"
   },
   "devDependencies": {
-    "@babel/cli": "^7.10.3",
+    "@babel/cli": "^7.12.1",
     "@babel/core": "^7.10.5",
     "@babel/plugin-proposal-class-properties": "^7.10.1",
     "@babel/plugin-proposal-object-rest-spread": "^7.10.3",
